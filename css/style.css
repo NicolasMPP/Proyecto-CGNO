@@ -1,0 +1,497 @@
+/* Paleta de colores */
+/* Color Theme Swatches in Hex */
+.Hospitality-1-hex {
+  color: #FFFFFF;
+}
+
+.Hospitality-2-hex {
+  color: #1EB96E;
+}
+
+.Hospitality-3-hex {
+  color: #1C6C45;
+}
+
+.Hospitality-4-hex {
+  color: #184831;
+}
+
+.Hospitality-5-hex {
+  color: #092F1D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1em;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header .logo {
+  margin: 0;
+  font-weight: bold;
+  color: rgb(14, 144, 127);
+  font-size: 1.25em;
+}
+
+header .container {
+  flex-basis: calc(45% - 15px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  background-color: #008F8C;
+  color: white;
+}
+
+header p:hover {
+  color: white;
+}
+
+#hero h1 {
+  padding: 0 100px;
+  text-align: center;
+}
+
+#hero h2 {
+  padding: 0 100px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #015958;
+}
+
+button:hover {
+  background-color: #008F8C;
+}
+
+.especialidad p {
+  display: none;
+}
+
+.oculto {
+  display: none;
+}
+
+.menu_desktop {
+  display: none;
+}
+
+.menu_telefono {
+  display: flex;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_telefono div:nth-child(2) {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 0px;
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  transition: all 250ms ease-out;
+}
+
+.menu_telefono div.open:nth-child(2) {
+  margin-top: 0;
+  height: 175px;
+}
+
+#clinica {
+  min-width: 20px;
+  min-height: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#clinica span {
+  border-radius: 5px;
+  background-color: #015958;
+  width: 100%;
+  height: 2px;
+  transition: all 300ms ease-out;
+}
+
+#servicios {
+  margin: 0%;
+  background-color: #015958;
+}
+
+#servicios h3,
+#especialidades h3 {
+  padding: 15px 0;
+  background-color: #015958;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: rgb(245, 245, 245);
+}
+
+#servicios .container div {
+  display: flex;
+  flex-direction: column;
+  background-color: #008F8C;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+  padding: 10px 25px;
+  margin-top: 25px;
+  align-items: center;
+}
+
+#especialidades .container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #023535;
+}
+
+#especialidades .container div {
+  display: flex;
+  flex-direction: column;
+  background-color: #008F8C;
+  flex-basis: 20%;
+  align-items: center;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+  padding: 25px;
+  margin: 5px;
+}
+
+#especialidades h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.especialidad img {
+  width: 75px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+#servicios .container div h4 {
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.especialidad h4 {
+  margin: 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 22px;
+}
+
+#coberturas h2 {
+  text-align: center;
+}
+
+.grilla-coberturas {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.itm-logo-cobertura {
+  width: 20%;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.img-logo-cobertura {
+  width: 200px;
+  display: inline;
+}
+
+.contacto .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: #008C8F;
+  height: 10vh;
+  margin-bottom: 30px;
+}
+
+.contacto ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto ul li {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.whatsapp {
+  bottom: 10px;
+  height: 70px;
+  position: fixed;
+  right: 10px;
+  width: 60px;
+}
+
+footer .container {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #008C8F;
+  margin: 10px;
+}
+
+footer .container p {
+  margin: 5px;
+  font-size: 12.5px;
+  font-weight: bold;
+}
+/* Estilos pagina de Turnos Web */
+#container_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #023535;
+  color: #FFFFFF;
+}
+
+input{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #015958;
+}
+/* Estilos pagina Quienes Somos? */
+ #quiene_somo{
+  background-color:#015958;
+  color: #FFFFFF;
+} 
+
+#quiene_somo .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#quiene_somo .texto {
+  width: 50%;
+  max-width: 600px;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Pagina de Noticias */
+.noticias {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.noticias_container {
+  column-count: 2; /* Divide las noticias en dos columnas */
+  column-gap: 20px; /* Espacio entre columnas */
+}
+
+.noticia {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.noticia h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.noticia p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .menu_desktop {
+    display: flex;
+  }
+
+  .menu_telefono {
+    display: none;
+  }
+
+  #servicios .container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #especialidades .container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #023535;
+  }
+
+  #servicios .container div {
+    background-color: #008F8C;
+    flex-basis: 20%;
+    text-align: left;
+    font-size: smaller;
+    color: white;
+    font-size: 15px;
+    padding: 25px;
+    margin: 5px;
+  }
+
+  #servicios .container div ul {
+    padding: 10px 20px 50px 30px;
+    margin: 0;
+    text-align: left;
+    list-style: square;
+    font-size: 15px;
+  }
+
+  #especialidades p,
+  .servicio p {
+    margin-left: 10px;
+  }
+
+  #especialidades .container {
+    background-color: #015958;
+    color: white;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    margin: 0;
+  }
+}
