@@ -130,6 +130,7 @@ header p:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 55px;
 }
 
 button {
@@ -508,7 +509,7 @@ input {
   }
 }
 
-@media (min-width: 360px) {
+@media (max-width: 372px) {
   .menu_telefono div:nth-child(2) {
 
     top: 56.4px;
