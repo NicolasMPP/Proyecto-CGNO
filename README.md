@@ -1,2 +1,3 @@
 # Proyecto-CGNO
-Proyecto Front de pagina para Clinica o Centro Medico
+
+Proyecto Front-end Responsive de pagina para Clinica o Centro Medico
